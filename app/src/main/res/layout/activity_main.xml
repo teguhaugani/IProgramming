@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#52E46E"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:text="Pemrograman tidak begitu Menyenangkan dan tidak mudah, namun pada Aplikasi ini kami membuat beberapa Trik agar sebuah Bahasa Pemograman dapat mudah dipahami, dimegerti dan Menyenangkan"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnnext"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/komp4" />
+
+    <Button
+        android:id="@+id/btnnext"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Next"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:onClick="next1"
+        />
+
+</RelativeLayout>
